@@ -10,6 +10,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/folder/:id" component={Home} />
+      <Route path="/shared/file/:id/:name" element={<SharedFilePage />} />
       <Route component={NotFound} />
     </Switch>
   );
