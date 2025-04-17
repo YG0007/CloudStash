@@ -43,8 +43,8 @@ app.use((req, res, next) => {
   }
 
   // ✅ IMPORTANT: Use PORT from Render and bind to 0.0.0.0
-  const port = process.env.PORT || 5000;
-
+  const port = Number(process.env.PORT) || 5000;
+  
   server.listen(port, () => {
     log(`✅ Server running on http://0.0.0.0:${port}`);
   });
