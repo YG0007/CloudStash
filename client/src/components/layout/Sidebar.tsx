@@ -24,10 +24,7 @@ export default function Sidebar({ className }: SidebarProps) {
   // Navigation items
   const navItems = [
     { icon: "home", label: "Home", path: "/" },
-    { icon: "file", label: "My Files", path: "/my-files" },
-    { icon: "share-nodes", label: "Shared", path: "/shared" },
-    { icon: "star", label: "Starred", path: "/starred" },
-    { icon: "trash-can", label: "Trash", path: "/trash" }
+    { icon: "home", label: "My Files", path: "/" },
   ];
   
   return (
